@@ -1302,6 +1302,11 @@ a:hover {
   .card-box-a .card-body-a {
     padding-bottom: 1rem;
   }
+
+  .title-wrap{
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .card-overlay-a-content {
@@ -1372,9 +1377,15 @@ a:hover {
 
 .card-footer-a {
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
   z-index: 2;
   background-color: #2eca6a;
+  height: 100px;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
 }
 
 .card-info {
@@ -1509,15 +1520,18 @@ a:hover {
 }
 
 .clients .clients-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #4154f1;
+  width: 18px;
+    height: 10px;
+    background-color: #555;
+    margin: 0 4px;
+    border-radius: 0;
+    opacity: 1;
+    transition: 0.3s;
 }
 
 .clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #4154f1;
+  background-color: #2eca6a;
+    width: 36px;
 }
 
 /*--------------------------------------------------------------
@@ -1591,6 +1605,7 @@ button.accordion-button.collapsed {
   position: absolute;
   bottom: 20px;
   z-index: 2;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -1601,7 +1616,13 @@ button.accordion-button.collapsed {
 
 @media (min-width: 992px) {
   .card-header-b {
-    bottom: 20px;
+    bottom: 0px;
+  }
+}
+
+@media (min-width: 238px) {
+  .card-header-b {
+    bottom: 0px;
   }
 }
 
@@ -1653,6 +1674,30 @@ button.accordion-button.collapsed {
   .card-header-b .date-b {
     font-size: 1rem;
   }
+}
+
+.date.readmore{
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  display: flex;
+  flex-grow: calc(1);
+  gap: 20px;
+}
+
+#news-carousel .card-header-b{
+ background-color: #2eca6a4f;
+}
+
+.news-paragraph{
+  color: #cac6c6;
+  font-size: 1rem;
+  font-weight: 300;
+  text-decoration: none;
+  display: flex;
+  flex-grow: calc(1);
+  gap: 20px;
 }
 
 /*------/ News Single /------*/
@@ -1761,7 +1806,7 @@ button.accordion-button.collapsed {
 .services .service-box {
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
   height: 100%;
-  padding: 60px 30px;
+  padding: 5px 30px;
   text-align: center;
   transition: 0.3s;
   border-radius: 5px;
