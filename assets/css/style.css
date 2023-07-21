@@ -1825,6 +1825,11 @@ button.accordion-button.collapsed {
   font-weight: bold;
 }
 
+.title.h3{
+  color: #000000;
+    font-weight: bold;
+}
+
 .category-and-time{
   display: flex;
   flex-direction: row;
@@ -1833,6 +1838,35 @@ button.accordion-button.collapsed {
 
 }
 
+
+.news-text{
+  text-align: justify;
+}
+
+.category-post-amount{
+  color: #000000;
+  font-size: 13px;
+  font-weight: 300;
+  width: 40px;
+  height: 40px;
+  background-color: #2eca6a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul .post-category-list{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  flex-wrap: wrap;
+  
+  /* beautiful border bottom  */
+
+  border-bottom: 1px solid #000000;
+  padding-bottom: 3px;
+  
+}
 
 
 
