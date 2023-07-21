@@ -1489,7 +1489,19 @@ a:hover {
 
 .property-agent ul {
   line-height: 2;
-  color: #000000;
+  color: #00b567;
+}
+
+.social-icon-link{
+  color: #ffffff;
+  font-size: 30px;
+}
+
+.social-list{
+  width: 40px;
+  height: 40px;
+  background-color: #047c48;
+  border-radius: 50%;
 }
 
 .property-agent .socials-a {
@@ -1690,6 +1702,10 @@ button.accordion-button.collapsed {
  background-color: #2eca6a4f;
 }
 
+.card-header-b.all-blogs {
+  background-color: #2eca6a4f;
+}
+
 .news-paragraph{
   color: #cac6c6;
   font-size: 1rem;
@@ -1794,6 +1810,27 @@ button.accordion-button.collapsed {
 
 .box-comments .comment-children {
   margin-left: 40px;
+}
+
+.recent-post{
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+  flex-grow: 1;
+}
+
+.recent-title{
+  color: #000000;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.category-and-time{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: 13px;
+
 }
 
 
